@@ -1,0 +1,8 @@
+.idea/
+listener-a
+listener-b
+listener-c
+sender
+customer-app/app/vendor
+order-app/app/vendor
+order-daemon/app/vendor

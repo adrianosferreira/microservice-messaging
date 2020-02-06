@@ -1,0 +1,3 @@
+show_orders:
+  path: /api/orders
+  controller: App\Controller\CustomerOrderController::showOrders

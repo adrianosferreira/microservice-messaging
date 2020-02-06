@@ -1,0 +1,78 @@
+version: '3'
+
+services:
+  order-app:
+    build:
+      context: ./order-app
+    depends_on:
+      - order-db
+    ports:
+      - '8881:8000'
+    volumes:
+      - ./order-app/:/var/www/html/
+    networks:
+      - event
+      - order
+  order-db:
+    image: mysql:5.7
+    volumes:
+      - orderDB:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 1
+      MYSQL_DATABASE: app
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+    ports:
+      - '3307:3306'
+    networks:
+      - order
+  order-daemon:
+    build:
+      context: ./order-daemon
+    depends_on:
+      - message-broker
+      - order-db
+    volumes:
+      - ./order-daemon/:/var/www/html/
+    networks:
+      - event
+      - order
+  customer-app:
+    build:
+      context: ./customer-app
+    depends_on:
+      - customer-db
+      - message-broker
+    ports:
+      - '8882:8000'
+    volumes:
+      - ./customer-app/:/var/www/html/
+    networks:
+      - customer
+      - event
+  customer-db:
+    image: mysql:5.7
+    volumes:
+      - customerDB:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 1
+      MYSQL_DATABASE: app
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+    ports:
+      - '3308:3306'
+    networks:
+      - customer
+  message-broker:
+    image: redis
+    ports:
+      - '6379:6379'
+    networks:
+      - event
+networks:
+  event:
+  customer:
+  order:
+volumes:
+  orderDB:
+  customerDB:
