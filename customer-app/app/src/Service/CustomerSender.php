@@ -3,25 +3,24 @@
 namespace App\Service;
 
 use App\Entity\Customer;
-use App\Service\Messaging\MessageBrokerInterface;
+use App\Service\Messaging\MessagePublisherInterface;
+use Symfony\Component\HttpFoundation\RequestStack;
 
 class CustomerSender
 {
     private const CHANNEL = 'customer-creation';
 
-    private $messageBroker;
+    private $publisher;
 
-    public function __construct(MessageBrokerInterface $messageBroker)
+    public function __construct(MessagePublisherInterface $publisher)
     {
-        $this->messageBroker = $messageBroker;
+        $this->publisher = $publisher;
     }
 
     public function send(Customer $customer)
     {
-        $this->messageBroker->publish(self::CHANNEL, json_encode([
-            'id'      => $customer->getId(),
-            'name'    => $customer->getName(),
-            'surname' => $customer->getSurname()
+        $this->publisher->publish(self::CHANNEL, json_encode([
+            'id' => $customer->getId(),
         ], JSON_PRETTY_PRINT));
     }
 }

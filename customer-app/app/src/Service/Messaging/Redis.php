@@ -2,7 +2,7 @@
 
 namespace App\Service\Messaging;
 
-class Redis implements MessageBrokerInterface
+class Redis implements MessagePublisherInterface
 {
     private $redis;
 

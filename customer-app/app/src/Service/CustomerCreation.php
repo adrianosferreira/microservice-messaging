@@ -3,9 +3,7 @@
 namespace App\Service;
 
 use App\Entity\Customer;
-use App\Service\Messaging\MessageBrokerInterface;
 use Doctrine\ORM\EntityManagerInterface;
-use http\Exception\BadMethodCallException;
 use Symfony\Component\HttpFoundation\RequestStack;
 
 class CustomerCreation
@@ -29,7 +27,7 @@ class CustomerCreation
         $request = $this->request->getCurrentRequest();
 
         if ( ! $request) {
-            throw new BadMethodCallException("Request can't be empty");
+            throw new \BadMethodCallException("Request can't be empty");
         }
 
         $customer = new Customer();
@@ -40,5 +38,7 @@ class CustomerCreation
         $this->manager->flush();
 
         $this->customerSender->send($customer);
+
+        return $customer;
     }
 }

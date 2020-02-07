@@ -2,7 +2,7 @@
 
 namespace App\Service\Messaging;
 
-interface MessageBrokerInterface
+interface MessagePublisherInterface
 {
 
     public function publish($channel, $data);
