@@ -1,7 +1,11 @@
 {
-  "name": "root/app",
+  "name": "order/daemon",
+  "description": "System for subscribing into customer creation Redis channel and programmatically generate its order",
   "require": {
     "doctrine/orm": "*"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
   },
   "autoload": {
     "psr-4": {

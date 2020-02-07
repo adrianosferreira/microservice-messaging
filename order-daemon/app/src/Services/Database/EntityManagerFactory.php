@@ -2,13 +2,14 @@
 
 namespace App\Services\Database;
 
+use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
 
 class EntityManagerFactory
 {
-
-    public function get() {
+    public function get(): EntityManagerInterface
+    {
         $dbParams = array(
             'host'     => 'order-db:3306',
             'driver'   => 'pdo_mysql',
@@ -17,14 +18,15 @@ class EntityManagerFactory
             'dbname'   => 'app',
         );
 
-        $paths = array(__DIR__.'/src/Entity');
-        $isDevMode = false;
+        $paths         = array(__DIR__ . '/src/Entity');
+        $isDevMode     = false;
+        $entityManager = null;
 
         try {
-            $config = Setup::createAnnotationMetadataConfiguration($paths, $isDevMode, null, null, false);
+            $config        = Setup::createAnnotationMetadataConfiguration($paths,
+                $isDevMode, null, null, false);
             $entityManager = EntityManager::create($dbParams, $config);
         } catch (\RedisException $e) {
-
         }
 
         return $entityManager;

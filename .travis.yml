@@ -1,0 +1,22 @@
+language: php
+
+matrix:
+  include:
+    - php: 7.2
+    - php: 7.3
+      env: ANALYSIS='true'
+    - php: 7.4
+    - php: nightly
+
+  allow_failures:
+    - php: nightly
+
+before_script:
+  - composer install -n
+
+script:
+  - if [[ "$ANALYSIS" != 'true' ]]; then vendor/bin/phpunit ; fi
+  - if [[ "$ANALYSIS" == 'true' ]]; then vendor/bin/phpunit --coverage-clover clover.xml ; fi
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

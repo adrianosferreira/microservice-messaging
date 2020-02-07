@@ -37,7 +37,7 @@ class CustomerCreation
         $this->manager->persist($customer);
         $this->manager->flush();
 
-        $this->customerSender->send($customer);
+        $this->customerSender->send($customer, $request);
 
         return $customer;
     }

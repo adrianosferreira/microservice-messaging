@@ -29,7 +29,5 @@ RUN wget -O /usr/local/bin/composer-setup.php https://getcomposer.org/installer;
     php -r "unlink('/usr/local/bin/composer-setup.php');"; \
     mv composer.phar /usr/local/bin/composer;
 
-CMD test ! -f /var/www/html/app/symfony.lock && \
-    composer create-project symfony/website-skeleton app; \
-    cd /var/www/html/app; \
-    symfony server:start;
+CMD cd /var/www/html/app; \
+    php index.php;

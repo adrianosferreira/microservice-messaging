@@ -2926,3 +2926,1153 @@ Log closed at 2020-02-04 19:33:27
 [14] E: Could not connect to client. :-(
 [14] Log closed at 2020-02-04 23:26:47
 
+[17] Log opened at 2020-02-07 15:15:21
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] I: Connected to client. :-)
+[17] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/app/public/index.php" language="PHP" xdebug:language_version="7.3.11" protocol_version="1.0" appid="17" idekey="PHPSTORM"><engine version="2.9.2"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2020 by Derick Rethans]]></copyright></init>
+
+[17] <- eval -i 1 -- KHN0cmluZykoaW5pX2dldCgneGRlYnVnLmNvdmVyYWdlX2VuYWJsZScpLic7Jy5pbmlfZ2V0KCd4ZGVidWcucHJvZmlsZXJfZW5hYmxlJykuJzsnLmluaV9nZXQoJ3hkZWJ1Zy5yZW1vdGVfYXV0b3N0YXJ0JykuJzsnLmluaV9nZXQoJ3hkZWJ1Zy5yZW1vdGVfY29ubmVjdF9iYWNrJykuJzsnLmluaV9nZXQoJ3hkZWJ1Zy5yZW1vdGVfbW9kZScpKQ==
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="1"><property type="string" size="11" encoding="base64"><![CDATA[MTswOzE7MDtyZXE=]]></property></response>
+
+[17] <- feature_set -i 2 -n show_hidden -v 1
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="2" feature="show_hidden" success="1"></response>
+
+[17] <- feature_set -i 3 -n max_depth -v 1
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="3" feature="max_depth" success="1"></response>
+
+[17] <- feature_set -i 4 -n max_children -v 100
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="4" feature="max_children" success="1"></response>
+
+[17] <- feature_set -i 5 -n extended_properties -v 1
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="5" feature="extended_properties" success="1"></response>
+
+[17] <- feature_set -i 6 -n resolved_breakpoints -v 1
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="6" feature="resolved_breakpoints" success="1"></response>
+
+[17] <- feature_set -i 7 -n notify_ok -v 1
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="feature_set" transaction_id="7" feature="notify_ok" success="1"></response>
+
+[17] <- stdout -i 8 -c 1
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stdout" transaction_id="8" success="1"></response>
+
+[17] <- status -i 9
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="status" transaction_id="9" status="starting" reason="ok"></response>
+
+[17] <- step_into -i 10
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="step_into" transaction_id="10" status="break" reason="ok"><xdebug:message filename="file:///var/www/html/app/public/index.php" lineno="7"></xdebug:message></response>
+
+[17] <- eval -i 11 -- aXNzZXQoJF9TRVJWRVJbJ1BIUF9JREVfQ09ORklHJ10p
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="11"><property type="bool"><![CDATA[0]]></property></response>
+
+[17] <- eval -i 12 -- aXNzZXQoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="12"><property type="bool"><![CDATA[1]]></property></response>
+
+[17] <- eval -i 13 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9OQU1FJ10p
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="13"><property type="string" size="14" encoding="base64"><![CDATA[bG9jYWxob3N0Ojg4ODE=]]></property></response>
+
+[17] <- eval -i 14 -- KHN0cmluZykoJF9TRVJWRVJbJ1NFUlZFUl9QT1JUJ10p
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="14"><property type="string" size="4" encoding="base64"><![CDATA[ODAwMA==]]></property></response>
+
+[17] <- eval -i 15 -- KHN0cmluZykoJF9TRVJWRVJbJ1JFUVVFU1RfVVJJJ10p
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="eval" transaction_id="15"><property type="string" size="11" encoding="base64"><![CDATA[L2FwaS9vcmRlcnM=]]></property></response>
+
+[17] <- stack_get -i 16
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="stack_get" transaction_id="16"><stack where="{main}" level="0" type="file" filename="file:///var/www/html/app/public/index.php" lineno="7"></stack></response>
+
+[17] <- run -i 17
+[17] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="error"><xdebug:message filename="file:///var/www/html/app/config/bootstrap.php" lineno="9" type="Warning"><![CDATA[include(/var/www/html/app/.env.local.php): failed to open stream: No such file or directory]]></xdebug:message></notify>
+
+[17] -> <notify xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" name="error"><xdebug:message filename="file:///var/www/html/app/config/bootstrap.php" lineno="9" type="Warning"><![CDATA[include(): Failed opening '/var/www/html/app/.env.local.php' for inclusion (include_path='.:/usr/local/lib/php')]]></xdebug:message></notify>
+
+[17] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[WC1Qb3dlcmVkLUJ5OiBQSFAvNy4zLjEx]]></stream>
+
+[17] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[17] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[Q2FjaGUtQ29udHJvbDogbm8tY2FjaGUsIHByaXZhdGU=]]></stream>
+
+[17] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[17] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[RGF0ZTogRnJpLCAwNyBGZWIgMjAyMCAxNToyMDoyOCBHTVQ=]]></stream>
+
+[17] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[17] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[Q29udGVudC1UeXBlOiB0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRGLTg=]]></stream>
+
+[17] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[17] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[WC1EZWJ1Zy1Ub2tlbjogZGY1NGFm]]></stream>
+
+[17] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[17] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[WC1EZWJ1Zy1Ub2tlbi1MaW5rOiBodHRwOi8vbG9jYWxob3N0Ojg4ODEvX3Byb2ZpbGVyL2RmNTRhZg==]]></stream>
+
+[17] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[17] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[WC1Sb2JvdHMtVGFnOiBub2luZGV4]]></stream>
+
+[17] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[17] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[DQo=]]></stream>
+
+[17] -> <stream xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" type="stdout" encoding="base64"><![CDATA[W3siaWQiOjEsImN1c3RvbWVySWQiOjEsInRvdGFsIjoiMTAwLjAwIiwic3RhdHVzIjoiY29tcGxldGVkIn0seyJpZCI6MiwiY3VzdG9tZXJJZCI6MTExLCJ0b3RhbCI6IjEyMy4wMCIsInN0YXR1cyI6IjEifSx7ImlkIjozLCJjdXN0b21lcklkIjoxMywidG90YWwiOiIxMDAwLjAwIiwic3RhdHVzIjoiMSJ9XQ==]]></stream>
+
+[17] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" command="run" transaction_id="17" status="stopping" reason="ok"></response>
+
+[17] Log closed at 2020-02-07 15:23:58
+
+[17] Log opened at 2020-02-07 15:23:59
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:23:59
+
+[17] Log opened at 2020-02-07 15:25:04
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:25:04
+
+[17] Log opened at 2020-02-07 15:25:08
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:25:08
+
+[17] Log opened at 2020-02-07 15:25:08
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:25:08
+
+[17] Log opened at 2020-02-07 15:25:08
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:25:08
+
+[17] Log opened at 2020-02-07 15:25:20
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:25:20
+
+[17] Log opened at 2020-02-07 15:25:25
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:25:25
+
+[17] Log opened at 2020-02-07 15:25:25
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:25:25
+
+[17] Log opened at 2020-02-07 15:25:25
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:25:25
+
+[17] Log opened at 2020-02-07 15:25:35
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:25:35
+
+[17] Log opened at 2020-02-07 15:25:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:25:38
+
+[17] Log opened at 2020-02-07 15:25:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:25:38
+
+[17] Log opened at 2020-02-07 15:25:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:25:38
+
+[17] Log opened at 2020-02-07 15:25:46
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:25:46
+
+[17] Log opened at 2020-02-07 15:25:49
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:25:49
+
+[17] Log opened at 2020-02-07 15:25:49
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:25:49
+
+[17] Log opened at 2020-02-07 15:25:49
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:25:49
+
+[17] Log opened at 2020-02-07 15:26:10
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:10
+
+[17] Log opened at 2020-02-07 15:26:10
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:10
+
+[17] Log opened at 2020-02-07 15:26:10
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:10
+
+[17] Log opened at 2020-02-07 15:26:10
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:10
+
+[17] Log opened at 2020-02-07 15:26:10
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:10
+
+[17] Log opened at 2020-02-07 15:26:10
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:10
+
+[17] Log opened at 2020-02-07 15:26:10
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:10
+
+[17] Log opened at 2020-02-07 15:26:10
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:10
+
+[17] Log opened at 2020-02-07 15:26:10
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:10
+
+[17] Log opened at 2020-02-07 15:26:10
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:10
+
+[17] Log opened at 2020-02-07 15:26:10
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:10
+
+[17] Log opened at 2020-02-07 15:26:10
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:10
+
+[17] Log opened at 2020-02-07 15:26:10
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:10
+
+[17] Log opened at 2020-02-07 15:26:10
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:10
+
+[17] Log opened at 2020-02-07 15:26:10
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:10
+
+[17] Log opened at 2020-02-07 15:26:10
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:10
+
+[17] Log opened at 2020-02-07 15:26:23
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:23
+
+[17] Log opened at 2020-02-07 15:26:39
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:39
+
+[17] Log opened at 2020-02-07 15:26:45
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:45
+
+[17] Log opened at 2020-02-07 15:26:45
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:45
+
+[17] Log opened at 2020-02-07 15:26:45
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:45
+
+[17] Log opened at 2020-02-07 15:26:58
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:58
+
+[17] Log opened at 2020-02-07 15:26:58
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:58
+
+[17] Log opened at 2020-02-07 15:26:58
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:58
+
+[17] Log opened at 2020-02-07 15:26:58
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:58
+
+[17] Log opened at 2020-02-07 15:26:58
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:58
+
+[17] Log opened at 2020-02-07 15:26:58
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:58
+
+[17] Log opened at 2020-02-07 15:26:58
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:58
+
+[17] Log opened at 2020-02-07 15:26:58
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:58
+
+[17] Log opened at 2020-02-07 15:26:58
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:58
+
+[17] Log opened at 2020-02-07 15:26:58
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:58
+
+[17] Log opened at 2020-02-07 15:26:58
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:58
+
+[17] Log opened at 2020-02-07 15:26:58
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:58
+
+[17] Log opened at 2020-02-07 15:26:58
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:58
+
+[17] Log opened at 2020-02-07 15:26:58
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:58
+
+[17] Log opened at 2020-02-07 15:26:58
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:58
+
+[17] Log opened at 2020-02-07 15:26:58
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (8).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:26:58
+
+[17] Log opened at 2020-02-07 15:32:04
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:04
+
+[17] Log opened at 2020-02-07 15:32:24
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:24
+
+[17] Log opened at 2020-02-07 15:32:24
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:24
+
+[17] Log opened at 2020-02-07 15:32:24
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:24
+
+[17] Log opened at 2020-02-07 15:32:24
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:24
+
+[17] Log opened at 2020-02-07 15:32:24
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:24
+
+[17] Log opened at 2020-02-07 15:32:24
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:24
+
+[17] Log opened at 2020-02-07 15:32:24
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:24
+
+[17] Log opened at 2020-02-07 15:32:24
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:24
+
+[17] Log opened at 2020-02-07 15:32:24
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:24
+
+[17] Log opened at 2020-02-07 15:32:24
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:24
+
+[17] Log opened at 2020-02-07 15:32:24
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:24
+
+[17] Log opened at 2020-02-07 15:32:24
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:24
+
+[17] Log opened at 2020-02-07 15:32:24
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:24
+
+[17] Log opened at 2020-02-07 15:32:24
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:24
+
+[17] Log opened at 2020-02-07 15:32:25
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:25
+
+[17] Log opened at 2020-02-07 15:32:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:38
+
+[17] Log opened at 2020-02-07 15:32:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:38
+
+[17] Log opened at 2020-02-07 15:32:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:38
+
+[17] Log opened at 2020-02-07 15:32:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:38
+
+[17] Log opened at 2020-02-07 15:32:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:38
+
+[17] Log opened at 2020-02-07 15:32:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:38
+
+[17] Log opened at 2020-02-07 15:32:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:38
+
+[17] Log opened at 2020-02-07 15:32:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:38
+
+[17] Log opened at 2020-02-07 15:32:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:38
+
+[17] Log opened at 2020-02-07 15:32:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:38
+
+[17] Log opened at 2020-02-07 15:32:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:38
+
+[17] Log opened at 2020-02-07 15:32:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:38
+
+[17] Log opened at 2020-02-07 15:32:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:38
+
+[17] Log opened at 2020-02-07 15:32:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:38
+
+[17] Log opened at 2020-02-07 15:32:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:38
+
+[17] Log opened at 2020-02-07 15:32:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:32:38
+
+[17] Log opened at 2020-02-07 15:39:27
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:39:27
+
+[17] Log opened at 2020-02-07 15:39:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:39:38
+
+[17] Log opened at 2020-02-07 15:39:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:39:38
+
+[17] Log opened at 2020-02-07 15:39:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:39:38
+
+[17] Log opened at 2020-02-07 15:39:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:39:38
+
+[17] Log opened at 2020-02-07 15:39:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:39:38
+
+[17] Log opened at 2020-02-07 15:39:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:39:38
+
+[17] Log opened at 2020-02-07 15:39:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:39:38
+
+[17] Log opened at 2020-02-07 15:39:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:39:38
+
+[17] Log opened at 2020-02-07 15:39:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:39:38
+
+[17] Log opened at 2020-02-07 15:39:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:39:38
+
+[17] Log opened at 2020-02-07 15:39:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:39:38
+
+[17] Log opened at 2020-02-07 15:39:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:39:38
+
+[17] Log opened at 2020-02-07 15:39:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:39:38
+
+[17] Log opened at 2020-02-07 15:39:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:39:38
+
+[17] Log opened at 2020-02-07 15:42:05
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:05
+
+[17] Log opened at 2020-02-07 15:42:22
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:22
+
+[17] Log opened at 2020-02-07 15:42:22
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:22
+
+[17] Log opened at 2020-02-07 15:42:22
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:22
+
+[17] Log opened at 2020-02-07 15:42:22
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:22
+
+[17] Log opened at 2020-02-07 15:42:22
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:22
+
+[17] Log opened at 2020-02-07 15:42:22
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:22
+
+[17] Log opened at 2020-02-07 15:42:22
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:22
+
+[17] Log opened at 2020-02-07 15:42:22
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:22
+
+[17] Log opened at 2020-02-07 15:42:22
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:22
+
+[17] Log opened at 2020-02-07 15:42:22
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:22
+
+[17] Log opened at 2020-02-07 15:42:22
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:22
+
+[17] Log opened at 2020-02-07 15:42:22
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:22
+
+[17] Log opened at 2020-02-07 15:42:22
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:22
+
+[17] Log opened at 2020-02-07 15:42:22
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:22
+
+[17] Log opened at 2020-02-07 15:42:38
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:38
+
+[17] Log opened at 2020-02-07 15:42:49
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:49
+
+[17] Log opened at 2020-02-07 15:42:49
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:49
+
+[17] Log opened at 2020-02-07 15:42:49
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:49
+
+[17] Log opened at 2020-02-07 15:42:49
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:49
+
+[17] Log opened at 2020-02-07 15:42:49
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:49
+
+[17] Log opened at 2020-02-07 15:42:49
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:49
+
+[17] Log opened at 2020-02-07 15:42:49
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:49
+
+[17] Log opened at 2020-02-07 15:42:49
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:49
+
+[17] Log opened at 2020-02-07 15:42:49
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:49
+
+[17] Log opened at 2020-02-07 15:42:49
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:49
+
+[17] Log opened at 2020-02-07 15:42:49
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:50
+
+[17] Log opened at 2020-02-07 15:42:50
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:50
+
+[17] Log opened at 2020-02-07 15:42:50
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:50
+
+[17] Log opened at 2020-02-07 15:42:50
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:42:50
+
+[17] Log opened at 2020-02-07 15:46:28
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:46:28
+
+[17] Log opened at 2020-02-07 15:46:40
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:46:40
+
+[17] Log opened at 2020-02-07 15:46:40
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:46:40
+
+[17] Log opened at 2020-02-07 15:46:40
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:46:40
+
+[17] Log opened at 2020-02-07 15:46:40
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:46:40
+
+[17] Log opened at 2020-02-07 15:46:40
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:46:40
+
+[17] Log opened at 2020-02-07 15:46:40
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:46:40
+
+[17] Log opened at 2020-02-07 15:46:40
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:46:40
+
+[17] Log opened at 2020-02-07 15:46:40
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:46:40
+
+[17] Log opened at 2020-02-07 15:46:40
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:46:40
+
+[17] Log opened at 2020-02-07 15:46:40
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:46:40
+
+[17] Log opened at 2020-02-07 15:46:40
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:46:40
+
+[17] Log opened at 2020-02-07 15:46:40
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:46:40
+
+[17] Log opened at 2020-02-07 15:46:40
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:46:40
+
+[17] Log opened at 2020-02-07 15:46:40
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:46:40
+
+[17] Log opened at 2020-02-07 15:47:08
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:47:08
+
+[17] Log opened at 2020-02-07 15:47:18
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:47:18
+
+[17] Log opened at 2020-02-07 15:47:18
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:47:18
+
+[17] Log opened at 2020-02-07 15:47:18
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:47:18
+
+[17] Log opened at 2020-02-07 15:47:18
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (8).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:47:18
+
+[17] Log opened at 2020-02-07 15:47:18
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:47:18
+
+[17] Log opened at 2020-02-07 15:47:18
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:47:18
+
+[17] Log opened at 2020-02-07 15:47:18
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:47:18
+
+[17] Log opened at 2020-02-07 15:47:18
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:47:19
+
+[17] Log opened at 2020-02-07 15:47:19
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:47:19
+
+[17] Log opened at 2020-02-07 15:47:19
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:47:19
+
+[17] Log opened at 2020-02-07 15:47:19
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:47:19
+
+[17] Log opened at 2020-02-07 15:47:19
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:47:19
+
+[17] Log opened at 2020-02-07 15:47:19
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:47:19
+
+[17] Log opened at 2020-02-07 15:47:19
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:47:19
+
+[17] Log opened at 2020-02-07 15:57:42
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:57:42
+
+[17] Log opened at 2020-02-07 15:57:55
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:57:55
+
+[17] Log opened at 2020-02-07 15:57:55
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:57:55
+
+[17] Log opened at 2020-02-07 15:57:55
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:57:55
+
+[17] Log opened at 2020-02-07 15:57:55
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:57:55
+
+[17] Log opened at 2020-02-07 15:57:55
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:57:55
+
+[17] Log opened at 2020-02-07 15:57:55
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (8).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:57:55
+
+[17] Log opened at 2020-02-07 15:57:55
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:57:55
+
+[17] Log opened at 2020-02-07 15:57:55
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:57:55
+
+[17] Log opened at 2020-02-07 15:57:55
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:57:55
+
+[17] Log opened at 2020-02-07 15:57:55
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:57:55
+
+[17] Log opened at 2020-02-07 15:57:55
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:57:55
+
+[17] Log opened at 2020-02-07 15:57:55
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:57:55
+
+[17] Log opened at 2020-02-07 15:57:55
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:57:55
+
+[17] Log opened at 2020-02-07 15:57:55
+[17] I: Connecting to configured address/port: docker.for.mac.localhost:9000.
+[17] W: Creating socket for 'docker.for.mac.localhost:9000', poll success, but error: Operation now in progress (29).
+[17] E: Could not connect to client. :-(
+[17] Log closed at 2020-02-07 15:57:55
+

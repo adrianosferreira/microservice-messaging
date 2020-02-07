@@ -24,7 +24,7 @@ class Redis implements MessageSubscriberInterface
 
         if ($connected) {
             echo 'Connected to '. self::HOST .' on redis: ' . self::PORT . "\n";
-            $this->redis->subscribe(['customer-creation'], [$this->orderSubscriberCallback, 'subscribe']);
+            $this->redis->subscribe(['customer-creation'], [$this->orderSubscriberCallback, 'handle']);
         } else {
             echo "Could not connect to redis.\n";
         }
