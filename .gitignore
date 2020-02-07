@@ -6,3 +6,4 @@ sender
 customer-app/app/vendor
 order-app/app/vendor
 order-daemon/app/vendor
+*.log
