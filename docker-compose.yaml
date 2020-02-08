@@ -12,6 +12,7 @@ services:
       - ./order-app/:/var/www/html/
     networks:
       - order
+      - event
   order-db:
     image: mysql:5.7
     volumes:
@@ -24,17 +25,6 @@ services:
     ports:
       - '3307:3306'
     networks:
-      - order
-  order-daemon:
-    build:
-      context: ./order-daemon
-    depends_on:
-      - message-broker
-      - order-db
-    volumes:
-      - ./order-daemon/:/var/www/html/
-    networks:
-      - event
       - order
   customer-app:
     build:

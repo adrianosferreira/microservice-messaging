@@ -1,8 +1,8 @@
 FROM php:latest
 MAINTAINER Adriano Ferreira <adrianokta@gmail.com>
 
-RUN pecl install xdebug; \
-    docker-php-ext-enable xdebug; \
+RUN pecl install xdebug redis; \
+    docker-php-ext-enable xdebug redis; \
     echo "error_reporting = E_ALL" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini; \
     echo "error_log=/var/www/html/error_log.log" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini; \
     echo "display_startup_errors = On" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini; \
