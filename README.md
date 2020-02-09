@@ -37,11 +37,12 @@ For running this all you need is Docker installed on your machine. This project 
 
 You should run `docker-compose up` from inside of the root folder. Docker will map the port 8881 with the order application and 8882 with the customer application.
 
-Notice that in the last endpoint you are also sending some information that is not related to the customer (total and status) this is because imagine that you are ready to send your order but first you must register a new user for the visitor. After registering the new user you must send a message to Redis containing the order details.
+Notice that in the last endpoint you are also sending some information that is not related to the customer (total and status) this is because imagine that you are ready to send your order but first you must register a new user for the visitor. After registering the new user it is time to register its order and it is Redis the one responsible by setting up the communication.
 
-Also, you must execute the daemon application, for this follow the steps below:
-- Run `docker exec -ti CONTAINER_ID bash`
-- Navigate into `/var/www/html/app`
-- Run `php index.php`
+Also, you must execute the daemon application which comes with the Order Service, for this follow the steps below:
+- Run `docker exec -ti CONTAINER_ID bash` (the container of the Order Service)
+- Navigate into `/var/www/html/app/bin`
+- Run `php daemon`
+- Keep watching this terminal while you use the endpoint for creating a new customer
 
 All done, have fun!

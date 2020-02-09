@@ -2,6 +2,8 @@
 
 namespace App\Services;
 
+use Doctrine\ORM\EntityManagerInterface;
+
 class OrderSubscriberCallback
 {
     public function handle(\Redis $redis, string $channel, string $message): void
@@ -14,5 +16,6 @@ class OrderSubscriberCallback
         }
 
         (new OrderCreation())->create($order);
+        echo "Order created: {$order->getId()}\n";
     }
 }
