@@ -12,7 +12,8 @@ matrix:
     - php: nightly
 
 before_script:
-  - composer install -n
+  - customer-app/app/composer install -n
+  - order-app/app/composer install -n
 
 script:
   - customer-app/app/bin/phpunit
