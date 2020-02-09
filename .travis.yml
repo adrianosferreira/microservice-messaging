@@ -12,12 +12,12 @@ matrix:
     - php: nightly
 
 before_script:
-  - customer-app/app/composer install -n
-  - order-app/app/composer install -n
+  - cd /var/www/html/customer-app/app && composer install -n
+  - cd /var/www/html/order-app/app && composer install -n
 
 script:
-  - customer-app/app/bin/phpunit
-  - order-app/app/bin/phpunit
+  - cd /var/www/html/customer-app/app && ./bin/phpunit
+  - cd /var/www/html/order-app/app && ./bin/phpunit
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
